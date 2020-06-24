@@ -118,3 +118,38 @@ If we reflect on the avoidance rule, we are trying to prevent the members from b
 
 [Neighbours and separation]()
 ![](6.PNG)
+
+
+### Neighbours
+
+As discussed earlier, each member of the swarm needs to be aware of its neighbours. Because the arrangement of the members in the swarm will change constantly, each member must update its view of the world each time through a for-loop. This is done for each member of the swarm to obtain each member’s unique viewpoint
+
+**Calculating a new heading**
+
+**new heading = vectors for group heading + avoid heading + group position**
+
+![](7.PNG)
+
+## Predator and Obstacle Avoidance
+
+
+“The flocking rules we discussed so far yield impressive results. However, such flocking behaviour would be far more realistic and useful in games if the units also could avoid running into objects in the game world as they move around in a flock. As it turns out, adding such obstacle avoidance behaviour is a relatively simple matter. All we have to do is provide some mechanism for the units to see ahead of them and then apply appropriate steering forces to avoid obstacles in their [paths.”]()
+
+**In the example I built in unity, I have used the above technique**
+
+
+![](7.PNG)
+
+By creating a physics ray-cast on the butterflies we can test to detect a collision. Colliders would need to be attached to either an obstacle or a predator to detect it. Once detected the butterfly will turn away from it. As the bound method would have the butterflies redirecting to the centre when turning it was best to look at directing them differently in this case. I have used the [reflection method.]()
+
+The avoidance procedure does not guarantee zero collisions between members of the swarm and obstacles.
+
+A given member of the swarm could receive conflicting direction information that may guide it straight into an obstacle or predator.
+If a member “happens to get too close to a neighbour on one side while at the same time trying to avoid an obstacle on the other side. Depending on the relative distances from the neighbour and the obstacle, one steering force might dominate the other, causing a [collision.”]() To try and mitigate this from happening I have worked on a collision detection with a response of turning away from the obstacle or predator.
+There is an interesting study where a video game has been used to help researchers “learn more about how tiny European starlings keep predators at bay.” Using players to “target” virtual birds in a **murmuration pattern** researches have been able to reiterate the confusion such behaviour causes.
+
+[Example of murmuration pattern](https://www.youtube.com/watch?v=Qgz0xQRlOCk)
+
+**You can see a similar result in the pattern the swarm develop in the unity flocking example if you increase the maximum speed and rotation speed in the butterfly settings via the flock manager.**
+
+[Live Demo:](https://vimeo.com/432018256)
