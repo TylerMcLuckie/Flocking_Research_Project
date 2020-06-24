@@ -95,4 +95,26 @@ On the other hand, if you use a smaller range the swarm will start to fragment i
 **You can test this by changing the butterfly settings in the inspector via the flock manager**
 
 #### Flock.cs
+
 Attached to the butterfly prefab and linked to the FlockManager.cs, the Flock.cs applies the rules.
+
+## Cohesion
+
+To unify the swarm each member needs to direct themselves to the average position of its neighbours.
+
+**The sum of all positions divided the number in the group**
+ ![](5.PNG)
+ [Average position and heading of neighbours]()
+
+## Alignment
+
+**Add all the headings of the individuals together and divide by the size of the group**
+
+Alignment denotes that we want all the members in the swarm to generally head in the same direction. To satisfy this rule, I have the swarm following a goal that randomly updates it position within its bounds. There are also random speed ranges which adds to the illusion of natural behaviour for the swarm.
+
+### Separation
+
+If we reflect on the avoidance rule, we are trying to prevent the members from bumping into each other, “while at the same time enabling the members to get close to each other based on the alignment and cohesion rules” Therefore, we’ll enforce separation by requiring the members to direct themselves “away from any neighbour that is within view and within a prescribed minimum [separation distance”]()
+
+[Neighbours and separation]()
+![](6.PNG)
