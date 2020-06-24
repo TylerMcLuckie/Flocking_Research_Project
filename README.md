@@ -81,11 +81,12 @@ You don’t have to worry about rotation when using particles which would make i
 •	And avoid bumping into those around you
 
 [Member visibility](https://www.oreilly.com/library/view/ai-for-game/0596005555/ch04.html)
+
 ![](4.PNG)
 
 The above diagram shows how a member of the flock should be concerned with what is happening in its immediate vicinity
 
-### My Unity Flocking Example
+## My Unity Flocking Example
 
 The example I have made involves simulating several members of butterflies that can move around in flocks or one big flock, depending on the values you change in the inspector via the flock manager. Applying the [bounds method](https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Bounds.Contains.html), the swarm is bound in a box. If they venture out of those borders, they are prompted to turn around being directed back to the center of the box, using a [slerp](https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Quaternion.Slerp.html). They may also be directed to turn away from an obstacle or predator employing a [reflection vector](https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Vector3.Reflect.html).If they are not prompted to turn they will apply the swarm rules which I will be discussing further in detail below.
 
