@@ -28,15 +28,18 @@ Falling under the category of weak AI or deterministic behaviour, video games in
 
 ### Deterministic
 
-“Deterministic behaviour or performance is specified and predictable. There’s no uncertainty. An example of deterministic behaviour is a simple chasing algorithm. You can explicitly code a nonplayer character to move toward some target point by advancing along the x and y coordinate axes until the character’s x and y coordinates coincide with the target [location.”](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
+“Deterministic behaviour or performance is specified and predictable. There’s no uncertainty. An example of deterministic behaviour is a simple chasing algorithm. You can explicitly code a nonplayer character to move toward some target point by advancing along the x and y coordinate axes until the character’s x and y coordinates coincide with the target location.”
+[Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.](https://www.oreilly.com/library/view/ai-for-game/0596005555/index.html)
 
 ### Nondeterministic
 
-“Nondeterministic behaviour is the opposite of deterministic behaviour. Behaviour has a degree of uncertainty and is somewhat unpredictable (the degree of uncertainty depends on the AI method employed and how well that method is understood). An example of nondeterministic behaviour is a nonplayer character learning to adapt to the fighting tactics of a player. Such learning could use a neural network, a Bayesian technique, or a genetic [algorithm.”](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
+“Nondeterministic behaviour is the opposite of deterministic behaviour. Behaviour has a degree of uncertainty and is somewhat unpredictable (the degree of uncertainty depends on the AI method employed and how well that method is understood). An example of nondeterministic behaviour is a nonplayer character learning to adapt to the fighting tactics of a player. Such learning could use a neural network, a Bayesian technique, or a genetic algorithm.”
+[Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.](https://www.oreilly.com/library/view/ai-for-game/0596005555/index.html)
 
 
 With understanding the difference between deterministic and nondeterministic AI, my flocking and predator behaviour that I have built-in unity falls under the deterministic AI. Based on a physical science concept often used in modelling motion, potential function based movements is a technique that handles chasing, evading swarming, and collision avoidance simultaneously
-D. R. BRILLINGER, H. K. PREISLER, A. A. AGER, J. G. KIE
+
+[D. R. BRILLINGER, H. K. PREISLER, A. A. AGER, J. G. KIE](https://www.stat.berkeley.edu/~brill/Papers/fraser8.pdf)
 
 ## Flocking
 
