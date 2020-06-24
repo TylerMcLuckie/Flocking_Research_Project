@@ -42,7 +42,7 @@ D. R. BRILLINGER, H. K. PREISLER, A. A. AGER, J. G. KIE
 
 To portray realistic  behaviours in video games, “nonplayer characters must move in cohesive groups rather than independently.” Thus,  portraying the illusion that the nonplayer characters have a purpose. Properties in the flock such as collision, direction and force (speed) propagate from one member to the next member in the flock, giving it a unified behaviour. If we had to create every single member independently and then put them into a flock it would be extremely labour intensive. Fortunately, flocking algorithms such as the one presented by Craig Reynolds in his 1987 SIGGRAPH paper, “Flocks, Herds, and Schools: Gives us an amazing foundation for group behaviours. Furthermore, it demonstrates that it doesn’t take “ a huge leap of faith to see that you could apply such flocking behaviour” to a variety of creatures even that of human characters.
 
-[Reynolds, Craig W. (1987). "Flocks, herds, and schools: A distributed behavioral model". Proceedings of the 14th Annual Conference on Computer Graphics and Interactive Techniques]
+[Reynolds, Craig W. (1987). "Flocks, herds, and schools: A distributed behavioral model". Proceedings of the 14th Annual Conference on Computer Graphics and Interactive Techniques](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.1080.1217)
 
 [Craig Reynolds – Original 1986 Boids simulation]()
 
@@ -82,7 +82,7 @@ The above diagram shows how a member of the flock should be concerned with what 
 
 ### My Unity Flocking Example
 
-The example I have made involves simulating several members of butterflies that can move around in flocks or one big flock, depending on the values you change in the inspector via the flock manager. Applying the [bounds method](), the swarm is bound in a box. If they venture out of those borders, they are prompted to turn around being directed back to the center of the box, using a [slerp](). They may also be directed to turn away from an obstacle or predator employing a [reflection vector]().If they are not prompted to turn they will apply the swarm rules which I will be discussing further in detail below.
+The example I have made involves simulating several members of butterflies that can move around in flocks or one big flock, depending on the values you change in the inspector via the flock manager. Applying the [bounds method](https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Bounds.Contains.html), the swarm is bound in a box. If they venture out of those borders, they are prompted to turn around being directed back to the center of the box, using a [slerp](https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Quaternion.Slerp.html). They may also be directed to turn away from an obstacle or predator employing a [reflection vector](https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Vector3.Reflect.html).If they are not prompted to turn they will apply the swarm rules which I will be discussing further in detail below.
 
 #### The FlockManager.cs  
 
@@ -165,7 +165,7 @@ Flocking is just a facet of AI techniques commonly used today. AI is an evolving
 
 **References:**
 
-Reynolds, Craig W. (1987). "Flocks, herds, and schools: A distributed behavioral model". Proceedings of the 14th Annual Conference on Computer Graphics and Interactive Techniques
+[Reynolds, Craig W. (1987). "Flocks, herds, and schools: A distributed behavioral model". Proceedings of the 14th Annual Conference on Computer Graphics and Interactive Techniques](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.1080.1217)
 
 D. R. BRILLINGER, H. K. PREISLER, A. A. AGER, J. G. KIE, THE USE OF POTENTIAL FUNCTIONS IN MODELLING ANIMAL MOVEMENT
 
