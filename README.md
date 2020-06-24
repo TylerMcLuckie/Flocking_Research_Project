@@ -111,7 +111,7 @@ To unify the swarm each member needs to direct themselves to the average positio
 **The sum of all positions divided the number in the group**
  ![](5.PNG)
 
- [Average position and heading of neighbours](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
+ [Average position and heading of neighbours](https://www.oreilly.com/library/view/ai-for-game/0596005555/index.html)
 
 ## Alignment
 
