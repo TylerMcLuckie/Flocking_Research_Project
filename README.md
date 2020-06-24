@@ -48,7 +48,7 @@ To portray realistic  behaviours in video games, “nonplayer characters must mo
 
 [Reynolds, Craig W. (1987). "Flocks, herds, and schools: A distributed behavioral model". Proceedings of the 14th Annual Conference on Computer Graphics and Interactive Techniques](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.1080.1217)
 
-[Craig Reynolds – Original 1986 Boids simulation]()
+[Craig Reynolds – Original 1986 Boids simulation](https://www.youtube.com/watch?v=86iQiV3-3IA)
 
 
 ![](2.PNG)
