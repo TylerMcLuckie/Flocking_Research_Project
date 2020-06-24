@@ -119,9 +119,9 @@ To unify the swarm each member needs to direct themselves to the average positio
 
 Alignment denotes that we want all the members in the swarm to generally head in the same direction. To satisfy this rule, I have the swarm following a goal that randomly updates it position within its bounds. There are also random speed ranges which adds to the illusion of natural behaviour for the swarm.
 
-### Separation
+## Separation
 
-If we reflect on the avoidance rule, we are trying to prevent the members from bumping into each other, “while at the same time enabling the members to get close to each other based on the alignment and cohesion rules” Therefore, we’ll enforce separation by requiring the members to direct themselves “away from any neighbour that is within view and within a prescribed minimum [separation distance”](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
+If we reflect on the avoidance rule, we are trying to prevent the members from bumping into each other, “while at the same time enabling the members to get close to each other based on the alignment and cohesion rules” Therefore, we’ll enforce separation by requiring the members to direct themselves “away from any neighbour that is within view and within a prescribed minimum [separation distance”](https://www.oreilly.com/library/view/ai-for-game/0596005555/index.html)
 
 [Neighbours and separation](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
 ![](6.PNG)
