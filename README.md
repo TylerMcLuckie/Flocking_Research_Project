@@ -172,9 +172,9 @@ Flocking is just a facet of AI techniques commonly used today. AI is an evolving
 
 [Reynolds, Craig W. (1987). "Flocks, herds, and schools: A distributed behavioral model". Proceedings of the 14th Annual Conference on Computer Graphics and Interactive Techniques](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.1080.1217)
 
-D. R. BRILLINGER, H. K. PREISLER, A. A. AGER, J. G. KIE, THE USE OF POTENTIAL FUNCTIONS IN MODELLING ANIMAL MOVEMENT
+[D. R. BRILLINGER, H. K. PREISLER, A. A. AGER, J. G. KIE, THE USE OF POTENTIAL FUNCTIONS IN MODELLING ANIMAL MOVEMENT](https://www.stat.berkeley.edu/~brill/Papers/fraser8.pdf)
 
-Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.
+[Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.](https://www.oreilly.com/library/view/ai-for-game/0596005555/index.html)
 
 **Sources:**
 
