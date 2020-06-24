@@ -62,7 +62,8 @@ Inspired by the monarch butterfly migration from Canada to Mexico I have used sw
 
 When discussing his simulated flocks Craig Reynolds coined the term boids.
 
-“ All the boids can be moving in one direction at one moment, and then the next moment the tip of the flock formation can turn and the rest of the flock will follow as a wave of turning boids propagates through the flock. Reynolds’ implementation is leaderless in that no one boid actually leads the flock; in a sense they all sort of follow the group, which seems to have a mind of its own. The motion Reynolds’ flocking algorithm generated is quite impressive. Even more impressive is the fact that this behaviour is the result of three elegantly simple rules. These rules are summarized as [follows:”](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
+“ All the boids can be moving in one direction at one moment, and then the next moment the tip of the flock formation can turn and the rest of the flock will follow as a wave of turning boids propagates through the flock. Reynolds’ implementation is leaderless in that no one boid actually leads the flock; in a sense they all sort of follow the group, which seems to have a mind of its own. The motion Reynolds’ flocking algorithm generated is quite impressive. Even more impressive is the fact that this behaviour is the result of three elegantly simple rules. These rules are summarized as follows:”
+[Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.](https://www.oreilly.com/library/view/ai-for-game/0596005555/index.html)
 
 ### Cohesion
 “Have each member steer toward the average position of its neighbours.”
