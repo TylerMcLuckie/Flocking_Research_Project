@@ -54,3 +54,24 @@ Inspired by the monarch butterfly migration from Canada to Mexico I have used sw
 [Monarch butterfly migration video](https://www.youtube.com/watch?v=lWOySU_hAz0)
 
 ![](2.PNG)
+
+When discussing his simulated flocks Craig Reynolds coined the term boids.
+
+“ All the boids can be moving in one direction at one moment, and then the next moment the tip of the flock formation can turn and the rest of the flock will follow as a wave of turning boids propagates through the flock. Reynolds’ implementation is leaderless in that no one boid actually leads the flock; in a sense they all sort of follow the group, which seems to have a mind of its own. The motion Reynolds’ flocking algorithm generated is quite impressive. Even more impressive is the fact that this behaviour is the result of three elegantly simple rules. These rules are summarized as follows:”
+
+###Cohesion
+“Have each member steer toward the average position of its neighbours.”
+###Alignment
+“Have each member align itself to the average heading of its neighbours.”
+###Separation
+“Have each member steer to avoid hitting its neighbours.”
+
+These rules make it clear that the members of the flock need to be aware of each other and have the ability to direct their movement. Within each member’s immediate vicinity,  it knows the rough location, direction and separation from the other members in its territory.
+You don’t have to worry about rotation when using particles which would make it easier to prototype however to build a more realistic version of what might be designed in a game,  I have used a butterfly prefab which allows me to take care of orientation. Including them rotating to face the direction they need to be going and turning away from obstacles that they need to be avoiding.
+
+•	Turn to the average heading of the group
+•	Turn to the average centre of the group
+•	And avoid bumping into those around you
+
+[Member visibility](https://www.oreilly.com/library/view/ai-for-game/0596005555/ch04.html)
+![](4.PNG)
