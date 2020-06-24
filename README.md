@@ -28,11 +28,13 @@ Falling under the category of weak AI or deterministic behaviour, video games in
 
 ### Deterministic
 
-“Deterministic behaviour or performance is specified and predictable. There’s no uncertainty. An example of deterministic behaviour is a simple chasing algorithm. You can explicitly code a nonplayer character to move toward some target point by advancing along the x and y coordinate axes until the character’s x and y coordinates coincide with the target location.”
+“Deterministic behaviour or performance is specified and predictable. There’s no uncertainty. An example of deterministic behaviour is a simple chasing algorithm. You can explicitly code a nonplayer character to move toward some target point by advancing along the x and y coordinate axes until the character’s x and y coordinates coincide with the target [location.”](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
 
 ### Nondeterministic
 
-“Nondeterministic behaviour is the opposite of deterministic behaviour. Behaviour has a degree of uncertainty and is somewhat unpredictable (the degree of uncertainty depends on the AI method employed and how well that method is understood). An example of nondeterministic behaviour is a nonplayer character learning to adapt to the fighting tactics of a player. Such learning could use a neural network, a Bayesian technique, or a genetic algorithm.”
+“Nondeterministic behaviour is the opposite of deterministic behaviour. Behaviour has a degree of uncertainty and is somewhat unpredictable (the degree of uncertainty depends on the AI method employed and how well that method is understood). An example of nondeterministic behaviour is a nonplayer character learning to adapt to the fighting tactics of a player. Such learning could use a neural network, a Bayesian technique, or a genetic [algorithm.”](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
+
+
 With understanding the difference between deterministic and nondeterministic AI, my flocking and predator behaviour that I have built-in unity falls under the deterministic AI. Based on a physical science concept often used in modelling motion, potential function based movements is a technique that handles chasing, evading swarming, and collision avoidance simultaneously
 D. R. BRILLINGER, H. K. PREISLER, A. A. AGER, J. G. KIE
 
@@ -57,7 +59,7 @@ Inspired by the monarch butterfly migration from Canada to Mexico I have used sw
 
 When discussing his simulated flocks Craig Reynolds coined the term boids.
 
-“ All the boids can be moving in one direction at one moment, and then the next moment the tip of the flock formation can turn and the rest of the flock will follow as a wave of turning boids propagates through the flock. Reynolds’ implementation is leaderless in that no one boid actually leads the flock; in a sense they all sort of follow the group, which seems to have a mind of its own. The motion Reynolds’ flocking algorithm generated is quite impressive. Even more impressive is the fact that this behaviour is the result of three elegantly simple rules. These rules are summarized as follows:”
+“ All the boids can be moving in one direction at one moment, and then the next moment the tip of the flock formation can turn and the rest of the flock will follow as a wave of turning boids propagates through the flock. Reynolds’ implementation is leaderless in that no one boid actually leads the flock; in a sense they all sort of follow the group, which seems to have a mind of its own. The motion Reynolds’ flocking algorithm generated is quite impressive. Even more impressive is the fact that this behaviour is the result of three elegantly simple rules. These rules are summarized as [follows:”](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
 
 ### Cohesion
 “Have each member steer toward the average position of its neighbours.”
@@ -104,7 +106,7 @@ To unify the swarm each member needs to direct themselves to the average positio
 
 **The sum of all positions divided the number in the group**
  ![](5.PNG)
- [Average position and heading of neighbours]()
+ [Average position and heading of neighbours](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
 
 ## Alignment
 
@@ -114,9 +116,9 @@ Alignment denotes that we want all the members in the swarm to generally head in
 
 ### Separation
 
-If we reflect on the avoidance rule, we are trying to prevent the members from bumping into each other, “while at the same time enabling the members to get close to each other based on the alignment and cohesion rules” Therefore, we’ll enforce separation by requiring the members to direct themselves “away from any neighbour that is within view and within a prescribed minimum [separation distance”]()
+If we reflect on the avoidance rule, we are trying to prevent the members from bumping into each other, “while at the same time enabling the members to get close to each other based on the alignment and cohesion rules” Therefore, we’ll enforce separation by requiring the members to direct themselves “away from any neighbour that is within view and within a prescribed minimum [separation distance”](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
 
-[Neighbours and separation]()
+[Neighbours and separation](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
 ![](6.PNG)
 
 
@@ -133,19 +135,21 @@ As discussed earlier, each member of the swarm needs to be aware of its neighbou
 ## Predator and Obstacle Avoidance
 
 
-“The flocking rules we discussed so far yield impressive results. However, such flocking behaviour would be far more realistic and useful in games if the units also could avoid running into objects in the game world as they move around in a flock. As it turns out, adding such obstacle avoidance behaviour is a relatively simple matter. All we have to do is provide some mechanism for the units to see ahead of them and then apply appropriate steering forces to avoid obstacles in their [paths.”]()
+“The flocking rules we discussed so far yield impressive results. However, such flocking behaviour would be far more realistic and useful in games if the units also could avoid running into objects in the game world as they move around in a flock. As it turns out, adding such obstacle avoidance behaviour is a relatively simple matter. All we have to do is provide some mechanism for the units to see ahead of them and then apply appropriate steering forces to avoid obstacles in their [paths.”](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
 
 **In the example I built in unity, I have used the above technique**
 
 
-![](7.PNG)
+![](8.PNG)
 
 By creating a physics ray-cast on the butterflies we can test to detect a collision. Colliders would need to be attached to either an obstacle or a predator to detect it. Once detected the butterfly will turn away from it. As the bound method would have the butterflies redirecting to the centre when turning it was best to look at directing them differently in this case. I have used the [reflection method.]()
 
 The avoidance procedure does not guarantee zero collisions between members of the swarm and obstacles.
 
 A given member of the swarm could receive conflicting direction information that may guide it straight into an obstacle or predator.
-If a member “happens to get too close to a neighbour on one side while at the same time trying to avoid an obstacle on the other side. Depending on the relative distances from the neighbour and the obstacle, one steering force might dominate the other, causing a [collision.”]() To try and mitigate this from happening I have worked on a collision detection with a response of turning away from the obstacle or predator.
+If a member “happens to get too close to a neighbour on one side while at the same time trying to avoid an obstacle on the other side. Depending on the relative distances from the neighbour and the obstacle, one steering force might dominate the other, causing a [collision.”](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.) To try and mitigate this from happening I have worked on a collision detection with a response of turning away from the obstacle or predator.
+
+
 There is an interesting study where a video game has been used to help researchers “learn more about how tiny European starlings keep predators at bay.” Using players to “target” virtual birds in a **murmuration pattern** researches have been able to reiterate the confusion such behaviour causes.
 
 [Example of murmuration pattern](https://www.youtube.com/watch?v=Qgz0xQRlOCk)
@@ -153,3 +157,35 @@ There is an interesting study where a video game has been used to help researche
 **You can see a similar result in the pattern the swarm develop in the unity flocking example if you increase the maximum speed and rotation speed in the butterfly settings via the flock manager.**
 
 [Live Demo:](https://vimeo.com/432018256)
+
+In conclusion,
+
+I have often been mesmerised observing flocking behaviours in nature. This naturally has led to my fascination observing similar behaviours simulated in video games. One instance that demonstrated a unique player experience was the example of gameplay in Red Dead Redemption where a bird was shot out of the sky completely by chance. This was the result of embracing AI techniques in game design where a flocking algorithm and player behaviour crossed paths and created a unique outcome.
+Flocking is just a facet of AI techniques commonly used today. AI is an evolving field and no doubt we will be seeing even more elaborate techniques used in video games in the not too distant future . I have found researching AI in video games a fascinating study, one of which I believe I will continue to research for years to come.   
+
+**References:**
+
+Reynolds, Craig W. (1987). "Flocks, herds, and schools: A distributed behavioral model". Proceedings of the 14th Annual Conference on Computer Graphics and Interactive Techniques
+
+D. R. BRILLINGER, H. K. PREISLER, A. A. AGER, J. G. KIE, THE USE OF POTENTIAL FUNCTIONS IN MODELLING ANIMAL MOVEMENT
+
+Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.
+
+**Sources:**
+
+https://docs.unity3d.com/2019.4/Documentation/ScriptReference/UnityEngine.AIModule.html
+https://learn.unity.com/course/ml-agents-hummingbirds
+https://learn.unity.com/course/artificial-intelligence-for-beginners
+https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Bounds.Contains.html
+https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Quaternion.Slerp.html
+https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Vector3.Reflect.html
+https://www.physicsclassroom.com/class/refln/Lesson-1/The-Law-of-Reflection
+https://www.youtube.com/watch?v=NPuYtHZud0o
+
+[Craig Reynolds – Original 1986 Boids simulation](https://www.youtube.com/watch?v=86iQiV3-3IA)
+https://www.youtube.com/watch?v=Qgz0xQRlOCk
+
+**Monarch Butterfly migration:**
+
+https://www.nationalgeographic.com/news/2017/10/monarch-butterfly-migration/
+https://www.youtube.com/watch?v=lWOySU_hAz0
