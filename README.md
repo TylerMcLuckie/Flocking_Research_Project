@@ -88,7 +88,7 @@ The above diagram shows how a member of the flock should be concerned with what 
 
 The example I have made involves simulating several members of butterflies that can move around in flocks or one big flock, depending on the values you change in the inspector via the flock manager. Applying the [bounds method](https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Bounds.Contains.html), the swarm is bound in a box. If they venture out of those borders, they are prompted to turn around being directed back to the center of the box, using a [slerp](https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Quaternion.Slerp.html). They may also be directed to turn away from an obstacle or predator employing a [reflection vector](https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Vector3.Reflect.html).If they are not prompted to turn they will apply the swarm rules which I will be discussing further in detail below.
 
-#### The FlockManager.cs  
+### The FlockManager.cs  
 
 Creates all the butterflies and informs them about the other butterflies in the swarm. To start, it simply creates an array of cubes (butterflies) and instantiates all the cube objects and puts them at a random position within the location of the flock managers fly limits using a neutral rotation.
 
@@ -100,7 +100,7 @@ On the other hand, if you use a smaller range the swarm will start to fragment i
 
 **You can test this by changing the butterfly settings in the inspector via the flock manager**
 
-#### Flock.cs
+### Flock.cs
 
 Attached to the butterfly prefab and linked to the FlockManager.cs, the Flock.cs applies the rules.
 
@@ -110,6 +110,7 @@ To unify the swarm each member needs to direct themselves to the average positio
 
 **The sum of all positions divided the number in the group**
  ![](5.PNG)
+
  [Average position and heading of neighbours](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
 
 ## Alignment
