@@ -147,12 +147,12 @@ As discussed earlier, each member of the swarm needs to be aware of its neighbou
 
 ![](8.PNG)
 
-By creating a physics ray-cast on the butterflies we can test to detect a collision. Colliders would need to be attached to either an obstacle or a predator to detect it. Once detected the butterfly will turn away from it. As the bound method would have the butterflies redirecting to the centre when turning it was best to look at directing them differently in this case. I have used the [reflection method.]()
+By creating a physics ray-cast on the butterflies we can test to detect a collision. Colliders would need to be attached to either an obstacle or a predator to detect it. Once detected the butterfly will turn away from it. As the bound method would have the butterflies redirecting to the center when turning it was best to look at directing them differently in this case. I have used the [reflection method.](https://docs.unity3d.com/2019.4/Documentation/ScriptReference/Vector3.Reflect.html)
 
 The avoidance procedure does not guarantee zero collisions between members of the swarm and obstacles.
 
 A given member of the swarm could receive conflicting direction information that may guide it straight into an obstacle or predator.
-If a member “happens to get too close to a neighbour on one side while at the same time trying to avoid an obstacle on the other side. Depending on the relative distances from the neighbour and the obstacle, one steering force might dominate the other, causing a [collision.”](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.) To try and mitigate this from happening I have worked on a collision detection with a response of turning away from the obstacle or predator.
+If a member “happens to get too close to a neighbour on one side while at the same time trying to avoid an obstacle on the other side. Depending on the relative distances from the neighbour and the obstacle, one steering force might dominate the other, causing a [collision.”](https://www.oreilly.com/library/view/ai-for-game/0596005555/index.html) To try and mitigate this from happening I have worked on a collision detection with a response of turning away from the obstacle or predator.
 
 
 There is an interesting study where a video game has been used to help researchers “learn more about how tiny European starlings keep predators at bay.” Using players to “target” virtual birds in a **murmuration pattern** researches have been able to reiterate the confusion such behaviour causes.
