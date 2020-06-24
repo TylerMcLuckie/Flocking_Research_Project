@@ -140,7 +140,7 @@ As discussed earlier, each member of the swarm needs to be aware of its neighbou
 ## Predator and Obstacle Avoidance
 
 
-“The flocking rules we discussed so far yield impressive results. However, such flocking behaviour would be far more realistic and useful in games if the units also could avoid running into objects in the game world as they move around in a flock. As it turns out, adding such obstacle avoidance behaviour is a relatively simple matter. All we have to do is provide some mechanism for the units to see ahead of them and then apply appropriate steering forces to avoid obstacles in their [paths.”](Bough and Seemann ,D,G. AI for Game Developers © 2020 O'Reilly Media, Inc.)
+“The flocking rules we discussed so far yield impressive results. However, such flocking behaviour would be far more realistic and useful in games if the units also could avoid running into objects in the game world as they move around in a flock. As it turns out, adding such obstacle avoidance behaviour is a relatively simple matter. All we have to do is provide some mechanism for the units to see ahead of them and then apply appropriate steering forces to avoid obstacles in their [paths.”](https://www.oreilly.com/library/view/ai-for-game/0596005555/index.html)
 
 **In the example I built in unity, I have used the above technique**
 
